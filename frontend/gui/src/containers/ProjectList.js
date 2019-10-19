@@ -40,9 +40,6 @@ class ProjectList extends React.Component {
                     </div>
                 </div>
             </div>
-            // <div>
-            //     this.state.projects
-            // </div>
         )
     }
 }
