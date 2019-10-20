@@ -5,7 +5,7 @@ const Project = (props) => {
         props.data.image === null ? 
         
         <div className="col-md-6 col-lg-4 grid-item"> 
-            <a href="/detail/" className="title-link">
+            <a href={`/${props.data.id}`} className="title-link">
                 <div className="box-masonry"> 
                     <div className="box-masonry-text"> 
                         <h4> {props.data.title}</h4>
@@ -19,16 +19,16 @@ const Project = (props) => {
 
         :
 
-        <div class="col-md-6 col-lg-3 grid-item"> 
-			<div class="box-masonry"> 
-                <a href="/detail/" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
+        <div className="col-md-6 col-lg-4 grid-item"> 
+			<div className="box-masonry"> 
+                <a href={`/${props.data.id}`} title="" className="box-masonry-image with-hover-overlay with-hover-icon">
                     <img src={props.data.image} alt="" className="img-fluid" />
                 </a>
-			    <div class="box-masonry-text"> 
+			    <div className="box-masonry-text"> 
                     <h4> 
-                        <a href="/detail/">{props.data.title}</a>
+                        <a href={`/${props.data.id}`}>{props.data.title}</a>
                     </h4>
-                    <div class="box-masonry-desription">
+                    <div className="box-masonry-desription">
                         <p>{props.data.description}</p>
                     </div>
 			    </div>

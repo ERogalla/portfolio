@@ -8,4 +8,5 @@ class ProjectListView(ListAPIView):
 
 class ProjectDetailView(RetrieveAPIView):
     serializer_class = ProjectSerializer
-    queryset = Project.objects.all()
+    queryset = Project.objects.all().order_by('name')
+    lookup_field = 'slug'

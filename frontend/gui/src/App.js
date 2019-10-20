@@ -1,6 +1,7 @@
 import React from 'react';
+import { BrowserRouter as Router} from 'react-router-dom';
 
-import ProjectList from './containers/ProjectList';
+import BaseRouter from './Routes';
 
 import './vendor/bootstrap/css/bootstrap.min.css';
 import './vendor/font-awesome/css/font-awesome.min.css';
@@ -9,10 +10,14 @@ import './vendor/owl.carousel/assets/owl.theme.default.css';
 import './css/style.blue.css';
 import './css/custom.css';
 
-function App() {
-	return (
-		<ProjectList />
-	);
+class App extends React.Component {
+	render() {
+		return (
+			<Router>
+				<BaseRouter />
+			</Router>
+		);
+	}
 }
 
 export default App;

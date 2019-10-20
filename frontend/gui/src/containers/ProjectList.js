@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import Project from '../components/Project';
 import Sidebar from './Sidebar';
+import Menu from './Menu';
 
 class ProjectList extends React.Component {
 
@@ -27,10 +28,7 @@ class ProjectList extends React.Component {
                     <div className="row row-offcanvas row-offcanvas-left"> 
                         <Sidebar />
                         <div className="col-md-8 col-lg-9 content-column">
-                            <div className="small-navbar d-flex d-md-none">
-                                <button type="button" data-toggle="offcanvas" className="btn btn-outline-primary"> <i className="fa fa-align-left mr-2"></i>Menu</button>
-                                <h1 className="small-navbar-heading"> <a href="/">Creative </a></h1>
-                            </div>
+                            <Menu />
                             <div className="grid row">
                                 {this.state.projects.map((val, index) => (
                                     <Project data={val} />

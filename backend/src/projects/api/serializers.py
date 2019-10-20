@@ -6,3 +6,6 @@ class ProjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = Project
         fields = '__all__'
+
+        lookup_field = 'slug'
+        extra_kwargs = {'url': {'lookup_field':'slug'}}
