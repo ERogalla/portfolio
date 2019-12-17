@@ -118,6 +118,9 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'src')
 
+MARKDOWN_URL = '/markdown/'
+MARKDOWN_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'scr')
+
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.

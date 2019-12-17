@@ -2,8 +2,6 @@ import React from 'react';
 import axios from 'axios';
 
 import Project from '../components/Project';
-import Sidebar from './Sidebar';
-import Menu from './Menu';
 
 class ProjectList extends React.Component {
 
@@ -23,20 +21,10 @@ class ProjectList extends React.Component {
 
     render() {
         return (
-            <div id="all">
-                <div className="container-fluid">
-                    <div className="row row-offcanvas row-offcanvas-left"> 
-                        <Sidebar />
-                        <div className="col-md-8 col-lg-9 content-column">
-                            <Menu />
-                            <div className="grid row">
-                                {this.state.projects.map((val, index) => (
-                                    <Project data={val} />
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div className="grid row">
+                {this.state.projects.map((val, index) => (
+                    <Project data={val} />
+                ))}
             </div>
         )
     }

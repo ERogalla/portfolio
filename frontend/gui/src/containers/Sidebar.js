@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sidebar = () => {
     return (
-        <div id="sidebar" className="col-md-4 col-lg-3 sidebar-offcanvas">
+        <div id="sidebar" className="col-md-4 col-lg-3 sidebar-offcanvas"  >
             <div className="sidebar-content">
                 <h1 className="sidebar-heading"> <a href="/">Hi! I'm Emilio</a></h1>
                 <p className="sidebar-p">I'm a Computer Science Student at UT </p>

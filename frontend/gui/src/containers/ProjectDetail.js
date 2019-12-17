@@ -1,42 +1,43 @@
 import React from 'react';
 import axios from 'axios';
-
-import Sidebar from './Sidebar';
+import ReactMarkdown from 'react-markdown';
 
 class ProjectDetail extends React.Component {
     state = {
-        article: {}
+        project: {}
     }
 
     componentDidMount() {
-        const projectID = this.props.match.params.projectID;
-        axios.get(`http://127.0.0.1:8000/api/${projectID}`)
+        const projectSlug = this.props.match.params.projectSlug;
+        axios.get(`http://127.0.0.1:8000/api/${projectSlug}`)
             .then(res => {
                 this.setState({
-                    article: res.data
+                    project: res.data
                 });
+                const readmePath = res.data.markdown;
+                fetch(readmePath)
+                .then(response => {
+                    return response.text()
+                })
+                .then(text => {
+                    this.setState({
+                    markdown: text
+                    })
+                })
             })
+        
     }
 
     handeledDelete = (event) => {
-        const projectID = this.props.match.params.projectID;
-        axios.delete(`http://127.0.0.1:8000/api/${projectID}/`);
+        const projectSlug = this.props.match.params.projectSlug;
+        axios.delete(`http://127.0.0.1:8000/api/${projectSlug}/`);
 
     }
 
 
     render() {   
         return (
-            <div id="all">
-                <div className="container-fluid">
-                    <div className="row row-offcanvas row-offcanvas-left"> 
-                        <Sidebar />
-                        <div className="col-md-8 col-lg-9 content-column">
-                        {this.state.article.title}
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <ReactMarkdown source={this.state.markdown} />
         )
     }
 }

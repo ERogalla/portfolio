@@ -7,7 +7,7 @@ class Project(models.Model):
     image = models.ImageField('Uploaded Image', upload_to='media', null=True, blank=True)
 
     slug = models.SlugField(max_length=20, default="hello")
-    #markdown = models.FileField()
+    markdown = models.FileField(upload_to='markdown', blank=True, null=True)
 
 
     def __str__(self):
