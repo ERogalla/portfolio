@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import Masonry from 'react-masonry-component';
 
 import Project from '../components/Project';
 
@@ -15,17 +16,16 @@ class ProjectList extends React.Component {
                 this.setState({
                     projects: res.data
                 });
-                console.log(res.data)
             })
     }
-
+    
     render() {
         return (
-            <div className="grid row">
+            <Masonry className={'row'}>
                 {this.state.projects.map((val, index) => (
                     <Project data={val} />
                 ))}
-            </div>
+            </Masonry>
         )
     }
 }

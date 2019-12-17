@@ -34,7 +34,6 @@ class ProjectDetail extends React.Component {
 
     }
 
-
     render() {   
         return (
             <ReactMarkdown source={this.state.markdown} />
