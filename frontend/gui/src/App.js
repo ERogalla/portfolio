@@ -8,8 +8,8 @@ import './vendor/bootstrap/css/bootstrap.min.css';
 import './vendor/font-awesome/css/font-awesome.min.css';
 import './vendor/owl.carousel/assets/owl.carousel.css';
 import './vendor/owl.carousel/assets/owl.theme.default.css';
-import './css/style.blue.css';
-import './css/custom.css';
+import './css/style.default.css';
+
 
 class App extends React.Component {
 	render() {

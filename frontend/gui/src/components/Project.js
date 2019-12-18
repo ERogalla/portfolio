@@ -6,14 +6,14 @@ const Project = (props) => {
         
         <div className="col-md-6 col-lg-4 grid-item"> 
             <div className="box-masonry"> 
-                <a href={`/${props.data.slug}/`} className="title-link">
-                        <div className="box-masonry-text"> 
-                            <h4> {props.data.title}</h4>
-                            <div className="box-masonry-desription">
-                                <p>{props.data.description}</p>
-                            </div>
-                        </div>
-                </a>
+                <div className="box-masonry-text"> 
+                    <h4> 
+                        <a href={`/${props.data.slug}/`} className="title-link">{props.data.title}</a>
+                    </h4>
+                    <div className="box-masonry-desription">
+                        <p>{props.data.description}</p>
+                    </div>
+                </div>
             </div>
 		</div>
 

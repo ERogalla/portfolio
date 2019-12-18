@@ -17,23 +17,19 @@ const Contact = () => {
                             <div className="row">
                                 <div className="col-md-6">
                                     <div className="form-group">
-                                        <label for="name">Your firstname *</label>
                                         <input type="text" name="name" id="name" required="required" className="form-control" />
                                     </div>
                                 </div>
                                 <div className="col-md-6">
                                     <div className="form-group">
-                                        <label for="surname">Your lastname *</label>
                                         <input type="text" name="surname" id="surname" required="required" className="form-control" />
                                     </div>
                                 </div>
                             </div>
                             <div className="form-group">
-                                <label for="email">Your email *</label>
                                 <input type="email" name="email" id="email" required="required" className="form-control" />
                             </div>
                             <div className="form-group">
-                                <label for="message">Your message for me *</label>
                                 <textarea rows="4" name="message" id="message" required="required" className="form-control"></textarea>
                             </div>
                             <div>

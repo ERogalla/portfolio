@@ -8,9 +8,9 @@ class Sidebar extends React.Component {
             <div id="sidebar" className="col-md-4 col-lg-3 sidebar-offcanvas"  >
                 <div className="sidebar-content">
                     <h1 className="sidebar-heading"> <a href="/">Hi! I'm Emilio</a></h1>
-                    <p className="sidebar-p">I'm a Computer Science Student at UT </p>
-                    <p className="sidebar-p">I'm originally from Dallas, now in Austin </p>
-                    <p className="sidebar-p">I'm  a Longhorn</p>
+                    <p className="sidebar-p">Computer Science Student at UT </p>
+                    <p className="sidebar-p">Originally from Dallas, now in Austin </p>
+                    <p className="sidebar-p">Longhorn <span role="img" aria-label="sheep">🤘</span></p>
 
                     <ul className="sidebar-menu">
                         <li className="sidebar-item"><NavLink exact to="/" className="sidebar-link" activeClassName="active">Home</NavLink></li>
