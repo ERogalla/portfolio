@@ -6,7 +6,7 @@ const Project = (props) => {
         
         <div className="col-md-6 col-lg-4 grid-item"> 
             <div className="box-masonry"> 
-                <a href={`/${props.data.slug}`} className="title-link">
+                <a href={`/${props.data.slug}/`} className="title-link">
                         <div className="box-masonry-text"> 
                             <h4> {props.data.title}</h4>
                             <div className="box-masonry-desription">
@@ -21,7 +21,7 @@ const Project = (props) => {
 
         <div className="col-md-6 col-lg-4 grid-item"> 
 			<div className="box-masonry"> 
-                <a href={`/${props.data.slug}`} title="" className="box-masonry-image with-hover-overlay with-hover-icon">
+                <a href={`/${props.data.slug}/`} title="" className="box-masonry-image with-hover-overlay with-hover-icon">
                     <img src={props.data.image} alt="" className="img-fluid" />
                 </a>
 			    <div className="box-masonry-text"> 

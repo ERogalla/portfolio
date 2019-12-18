@@ -6,16 +6,16 @@ class Layout extends React.Component {
 
     state = {
         sidebarIsActive: false,
-        sidebarHighlight: [],
-    };
+    }
 
-    ToggleClass = (e) => {
+    ToggleClass = () => {
         this.setState({
             sidebarIsActive: !this.state.sidebarIsActive
         })
     }
  
     render() {
+        console.log(this.props.children)
         return (
             <div id="all">
                 <div className="container-fluid">

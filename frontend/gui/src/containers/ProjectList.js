@@ -22,8 +22,8 @@ class ProjectList extends React.Component {
     render() {
         return (
             <Masonry className={'row'}>
-                {this.state.projects.map((val, index) => (
-                    <Project data={val} />
+                {this.state.projects.map((val, key) => (
+                    <Project data={val} key={key}/>
                 ))}
             </Masonry>
         )
