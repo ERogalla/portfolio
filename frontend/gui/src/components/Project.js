@@ -26,7 +26,7 @@ const Project = (props) => {
                 </a>
 			    <div className="box-masonry-text"> 
                     <h4> 
-                        <a href={`/${props.data.slug}`}>{props.data.title}</a>
+                        <a href={`/${props.data.slug}/`}>{props.data.title}</a>
                     </h4>
                     <div className="box-masonry-desription">
                         <p>{props.data.description}</p>
