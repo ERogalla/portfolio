@@ -306,7 +306,7 @@ SIDEBAR + RIGHT COLUMN
 
 .content-column-content p,
 .content-column-content li {
-  color: #999;
+  color: #555;
 }
 
 .content-column-content ul li {
@@ -449,6 +449,10 @@ SERVICES / INTEGRATIONS
   line-height: 1.5;
   margin-bottom: 3.75rem;
   color: #999;
+}
+
+img {
+  image-orientation: from-image;
 }
 
 /*

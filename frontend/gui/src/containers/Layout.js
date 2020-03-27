@@ -15,7 +15,6 @@ class Layout extends React.Component {
     }
  
     render() {
-        console.log(this.props.children)
         return (
             <div id="all">
                 <div className="container-fluid">

@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const About = () => {
     return (
         <div className="row">
@@ -9,16 +8,17 @@ const About = () => {
                     <h1>About me!</h1>
                     <div className="row">
                         <div className="col-lg-8">
-                            <p className="lead">I am a first year Computer Science student at the University of Texas at Austin! I went to North-Garland Highschool and graduated top 5% of my school.
-                            I learned Java through professional programming classes in School. I taught myself the Python, Javascript, and HTML/CSS languages. I am currently learning the Django Framework and Tensorflow.   </p>
+                            <p className="lead">I am a first year Computer Science student at the University of Texas at Austin!
+                            I learned to program through CS classes in high school and taught myself many languages. I now know Java, Python, some Javascript, and a descent ammount HTML/CSS languages.
+							I've also taught myself to use the Django Web Framework and Tensorflow.   </p>
                         </div>
                         <div className="col-md-4">
-                            <img src="emilio.jpeg" alt="Profile" />
+                            <img src={ require('../static/emilio.jpeg')} alt="Profile Picture" className="rounded-circle img-fluid"></img>
                         </div>
                     </div>
                     <h4 className="text-uppercase">Education</h4>
                     <p>Current Classes</p>
-                    <ul>
+                    <ul className="content-column-content">
                         <li>Computer Organization and Architecture</li>
                     </ul>
                     <p>Previously Classes</p>
