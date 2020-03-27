@@ -1,15 +1,16 @@
-
+import json
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+secret_info = json.load(open(os.path.join(os.path.dirname(BASE_DIR), 'src', 'secret.json')))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*a-cln_6g%$vw#9d$!(wuswt+=n9-)4c*l#rguknig%spf#1$3'
+SECRET_KEY = secret_info["key"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
