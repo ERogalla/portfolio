@@ -15,9 +15,19 @@ class Sidebar extends React.Component {
                     <ul className="sidebar-menu">
                         <li className="sidebar-item"><NavLink exact to="/" className="sidebar-link" activeClassName="active">Home</NavLink></li>
                         <li className="sidebar-item"><NavLink exact to="/about/" className="sidebar-link" activeClassName="active">About</NavLink></li>                                      
-                        <li className="sidebar-item"><NavLink exact to="/contact/" className="sidebar-link" activeClassName="active">Get in touch</NavLink></li>
+						<li className="sidebar-item"><a href="https://drive.google.com/file/d/1-aPZgmQvm1-tmR2hy1sFfJ3y9xz0Ww1Y/view?usp=sharing" className="sidebar-link">Resume</a></li>
                     </ul>
-                    <p className="social"><a href="/" data-animate-hover="pulse" className="external facebook"><i className="fa fa-facebook"></i></a><a href="/" data-animate-hover="pulse" className="external gplus"><i className="fa fa-google-plus"></i></a><a href="/" data-animate-hover="pulse" className="external twitter"><i className="fa fa-twitter"></i></a><a href="/" title="" className="external instagram"><i className="fa fa-instagram"></i></a><a href="/" data-animate-hover="pulse" className="email"><i className="fa fa-envelope"></i></a></p>
+                    <p className="social">
+						<a href="https://github.com/ERogalla" data-animate-hover="pulse" className="external">
+							<i className="fa fa-github"></i>
+						</a>
+						<a href="https://www.linkedin.com/in/erogalla/" data-animate-hover="pulse" className="external">
+							<i className="fa fa-linkedin"></i>
+						</a>
+						<a href="mailto:erogalla@utexas.edu" data-animate-hover="pulse" className="email">
+							<i className="fa fa-envelope"></i>
+						</a>
+					</p>
                     <div className="copyright text-center text-md-left">
                         <p className="credit">&copy;2019 Emilio Rogalla </p>
                     </div>
