@@ -138,3 +138,6 @@ About
 
 # adding secret info
 secret.json
+
+# virtualenvironment 
+env/
