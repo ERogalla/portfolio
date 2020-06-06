@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import ReactMarkdown from 'react-markdown';
+import * as data from '../defaultSource.json';
 
 class ProjectDetail extends React.Component {
     state = {
@@ -9,7 +10,7 @@ class ProjectDetail extends React.Component {
 
     componentDidMount() {
         const projectSlug = this.props.match.params.projectSlug;
-        axios.get(`http://18.222.171.163:8000/api/${projectSlug}/`)
+        axios.get(`${data.source}/api/${projectSlug}/`)
             .then(res => {
                 this.setState({
                     project: res.data
@@ -30,7 +31,7 @@ class ProjectDetail extends React.Component {
 
     handeledDelete = (event) => {
         const projectSlug = this.props.match.params.projectSlug;
-        axios.delete(`http://18.222.171.163:8000/api/${projectSlug}/`);
+        axios.delete(`${data.source}/api/${projectSlug}/`);
 
     }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Masonry from 'react-masonry-component';
+import * as data from '../defaultSource.json';
 
 import Project from '../components/Project';
 
@@ -11,7 +12,7 @@ class ProjectList extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('http://18.222.171.163:8000/api/')
+        axios.get(`${data.source}/api/`)
             .then(res => {
                 this.setState({
                     projects: res.data
