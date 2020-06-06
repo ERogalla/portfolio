@@ -9,7 +9,7 @@ class ProjectDetail extends React.Component {
 
     componentDidMount() {
         const projectSlug = this.props.match.params.projectSlug;
-        axios.get(`http://127.0.0.1:8000/api/${projectSlug}`)
+        axios.get(`http://18.222.171.163:8000/api/${projectSlug}/`)
             .then(res => {
                 this.setState({
                     project: res.data
@@ -30,7 +30,7 @@ class ProjectDetail extends React.Component {
 
     handeledDelete = (event) => {
         const projectSlug = this.props.match.params.projectSlug;
-        axios.delete(`http://127.0.0.1:8000/api/${projectSlug}/`);
+        axios.delete(`http://18.222.171.163:8000/api/${projectSlug}/`);
 
     }
 

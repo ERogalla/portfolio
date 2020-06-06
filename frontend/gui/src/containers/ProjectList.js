@@ -11,7 +11,7 @@ class ProjectList extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('http://127.0.0.1:8000/api')
+        axios.get('http://18.222.171.163:8000/api/')
             .then(res => {
                 this.setState({
                     projects: res.data

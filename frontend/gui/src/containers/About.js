@@ -21,7 +21,7 @@ const About = () => {
                     <ul className="content-column-content">
                         <li>Computer Organization and Architecture</li>
                     </ul>
-                    <p>Previously Classes</p>
+                    <p>Previous Classes</p>
                     <ul>
                         <li>Data Structures</li>
                         <li>Discreet Mathematics</li>
