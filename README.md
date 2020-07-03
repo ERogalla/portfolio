@@ -36,7 +36,7 @@ $ source env/bin/activate
 ##### Run!
 ```sh
 (env) $ cd src/
-(env) $ python manage.py runserver
+(env) src/ $ python manage.py runserver
 ```
 View at [127.0.0.1:8000](http://127.0.0.1:8000)
 
