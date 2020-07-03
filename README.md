@@ -1,5 +1,5 @@
 # Portfolio
-My portfolio website was built with React and Django. I am hosting my website on AWS.
+My portfolio website was built with React and Django. I am hosting my website on AWS. <br />
 View my live site [here](http://www.emilior.com/).
 
 ### Technical details
