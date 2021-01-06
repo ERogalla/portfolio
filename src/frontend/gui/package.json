@@ -5,7 +5,7 @@
   "dependencies": {
     "acorn": "^7.2.0",
     "antd": "^3.26.17",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "kind-of": "^6.0.3",
     "markdown-to-jsx": "^6.11.4",
     "marked": "^0.7.0",
